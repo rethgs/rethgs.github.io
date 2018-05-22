@@ -1,1 +1,9 @@
-theme: jekyll-theme-cayman
+title: ReversibleThings
+
+timezone: Asia/Seoul
+
+markdown: kramdown
+kramdown:
+  input:  GFM
+
+permalink: pretty

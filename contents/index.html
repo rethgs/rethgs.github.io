@@ -1,0 +1,37 @@
+---
+---
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <title>{{ site.title }}</title>
+  {% for file in site.static_files %}
+    {% if file.extname == '.css' %}
+      <link rel="stylesheet" href="{{ file.path }}">
+    {% endif %}
+  {% endfor %}
+</head>
+
+<body>
+  <div>
+    Reversible Things 글 목록
+  </div>
+  <div>
+    <ul>
+      {% for post in site.posts %}
+        <li>
+          <a href="{{ post.url }}">{{ post.title }}</a>
+          {{ post.excerpt }}
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% for file in site.static_files %}
+    {% if file.extname == '.js' %}
+      <script src="{{ file.path }}"></script>
+    {% endif %}
+  {% endfor %}
+</body>
+
+</html>
