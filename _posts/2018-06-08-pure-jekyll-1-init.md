@@ -40,6 +40,10 @@ $ jekyll serve
 * 처음에는 없어도 되고, 빈 파일도 괜찮음
 * 실행 가이드: https://jekyllrb-ko.github.io/docs/configuration/
 
+## 권장 favicon 파일: favicon.ico
+* favicon에 대해서는 별도로 다룰 예정
+* 일단은 기본 폴더에 favicon.ico가 있으면 보기 좋음
+
 ## 권장 깃 설정 파일: .gitignore
 '''
 \_site
